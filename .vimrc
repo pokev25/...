@@ -25,3 +25,7 @@ vmap <S-Tab> <gv
 
 " gui specific
 set guioptions-=T
+
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
