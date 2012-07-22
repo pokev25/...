@@ -7,7 +7,8 @@ set t_Co=16
 set background=light
 colorscheme solarized
 
-set number " line number
+" line number
+set number
 
 " tab
 set tabstop=4
@@ -15,11 +16,11 @@ set shiftwidth=4
 set expandtab " soft tab
 set autoindent
 
-"" normal mode
+" indentation keys
+" on normal mode
 nmap <Tab> >>
 nmap <S-Tab> <<
-
-"" visual mode
+" on visual mode
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
