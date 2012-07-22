@@ -1,3 +1,5 @@
+set nocompatible
+
 call pathogen#infect()
 syntax on
 filetype plugin on
@@ -9,6 +11,14 @@ colorscheme solarized
 
 " line number
 set number
+" cursor position
+set ruler
+
+" show last command
+set showcmd
+
+" show status bar: 2=always
+set laststatus=2
 
 " tab
 set tabstop=4
@@ -23,6 +33,14 @@ nmap <S-Tab> <<
 " on visual mode
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+" highlight all matches of search pattern
+set hlsearch
+" search on typing
+set incsearch
+
+" backspace mode
+set backspace=indent,eol,start
 
 " gui specific
 set guioptions-=T
