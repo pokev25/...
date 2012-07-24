@@ -16,7 +16,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias ll='ls -l'
-alias lh='ls -lh'
+alias ll='ls -l --group-directories-first'
+alias lh='ls -l -h --group-directories-first'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -CF --group-directories-first'
+alias ..='cd ..'
+alias path='echo -e ${PATH//:/\\n}'
+alias tree='tree -Csu'
