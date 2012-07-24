@@ -1,10 +1,6 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-if [ -f ~/.bashrc.local ]; then
-    . ~/.bashrc.local
-fi
-
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -23,3 +19,7 @@ alias l='ls -CF --group-directories-first'
 alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
 alias tree='tree -Csu'
+
+if [ -f ~/.bashrc.local ]; then
+    . ~/.bashrc.local
+fi
