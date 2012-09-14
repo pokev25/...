@@ -1,0 +1,10 @@
+! caps lock <-> esc http://vim.wikia.com/wiki/Map_caps_lock_to_escape_in_XWindows
+remove Lock = Caps_Lock
+keysym Escape = Caps_Lock
+keysym Caps_Lock = Escape
+add Lock = Caps_Lock
+
+! alt-r -> hangul https://github.com/puzzlet/_/blob/57821c8895d2f790a5abb1c7041b7ba7da652b4b/.Xmodmap
+keycode 108 = Hangul
+remove mod1 = Alt_R
+remove mod1 = Hangul
