@@ -1,0 +1,11 @@
+[include]
+    path = .gitconfig.local
+
+[alias]
+    serv = daemon --reuseaddr --base-path=. --export-all --verbose
+
+[core]
+    editor = vim
+
+[color]
+    ui = true
