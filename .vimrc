@@ -13,12 +13,12 @@ colorscheme solarized
 set number
 " cursor position
 set ruler
-
 " show last command
 set showcmd
-
 " show status bar: 2=always
 set laststatus=2
+
+set colorcolumn=80
 
 " tab
 set tabstop=4
