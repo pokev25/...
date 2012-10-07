@@ -7,7 +7,7 @@ if [ ! -f ~/.vim/autoload/pathogen.vim ]; then
     curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 fi
 
-for dotfile in `git ls-files --exclude=install.sh`
+for dotfile in `git ls-files | grep "^\."`
 do
 if [ -f "$HOME/$dotfile" -a ! -h "$HOME/$dotfile" ]; then
     mv "$HOME/$dotfile" "$HOME/$dotfile.`date +%F.%H.%M`"
