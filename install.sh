@@ -7,12 +7,20 @@ if [ ! -f ~/.vim/autoload/pathogen.vim ]; then
     curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 fi
 
+install_file() {
+    fpath="$2/$1"
+    if [ -f "$fpath" -a ! -h "$fpath" ]; then
+        now=`date +%F.%H.%M`
+        mv "$fpath" "$fpath.$now"
+        echo "moved old $fpath to $fpath.$now"
+    fi
+    if [ ! -f "$fpath" ]; then
+        ln -s "`pwd`/$1" "$fpath"
+        echo "installed $fpath"
+    fi
+}
+
 for dotfile in `git ls-files | grep "^\."`
 do
-if [ -f "$HOME/$dotfile" -a ! -h "$HOME/$dotfile" ]; then
-    mv "$HOME/$dotfile" "$HOME/$dotfile.`date +%F.%H.%M`"
-fi
-if [ ! -f "$HOME/$dotfile" ]; then
-    ln -s "`pwd`/$dotfile" "$HOME/$dotfile"
-fi
+    install_file "$dotfile" "$HOME"
 done
