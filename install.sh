@@ -24,3 +24,5 @@ for dotfile in `git ls-files | grep "^\."`
 do
     install_file "$dotfile" "$HOME"
 done
+
+install_file "tmx" "$PREFIX/bin"

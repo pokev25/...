@@ -20,6 +20,8 @@ alias ..='cd ..'
 alias path='echo -e ${PATH//:/\\n}'
 alias tree='tree -Csu'
 
+export PREFIX="$HOME/usr"
+
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
 fi
