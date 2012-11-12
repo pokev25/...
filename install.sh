@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. .bashrc
+
 # pathogen: https://github.com/tpope/vim-pathogen
 if [ ! -f ~/.vim/autoload/pathogen.vim ]; then
     mkdir -p ~/.vim/autoload
