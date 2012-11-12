@@ -12,6 +12,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+alias vi='vim'
 alias ll='ls -l --group-directories-first'
 alias lh='ls -l -h --group-directories-first'
 alias la='ls -A'
