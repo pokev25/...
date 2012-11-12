@@ -22,6 +22,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias tree='tree -Csu'
 
 export PREFIX="$HOME/usr"
+export PATH=$PATH:$PREFIX/bin
 
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
