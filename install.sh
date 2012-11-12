@@ -27,4 +27,5 @@ do
     install_file "$dotfile" "$HOME"
 done
 
+mkdir -p "$PREFIX/bin"
 install_file "tmx" "$PREFIX/bin"
