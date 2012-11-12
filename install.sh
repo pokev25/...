@@ -2,10 +2,12 @@
 
 . .bashrc
 
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.vim/bundle
+mkdir -p ~/.vim/backup
+
 # pathogen: https://github.com/tpope/vim-pathogen
 if [ ! -f ~/.vim/autoload/pathogen.vim ]; then
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
     curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 fi
 
