@@ -14,3 +14,7 @@
 	path = vim/bundle/vim-flake8
 	url = git://github.com/nvie/vim-flake8.git
 	ignore = dirty
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+	ignore = dirty
