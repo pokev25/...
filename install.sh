@@ -1,7 +1,5 @@
 #!/bin/bash
 
-. .bashrc
-
 install_file() {
     fpath="$2/$(basename $1)"
     if [ -e "$fpath" -a ! -h "$fpath" ]; then
