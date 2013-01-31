@@ -1,7 +1,12 @@
-#!/bin/bash
+#!/bin/sh
+
+PREFIX="$HOME/usr"
 
 install_file() {
-    fpath="$2/$(basename $1)"
+    fn="$3"
+    [ ! "$fn" ] && fn="$(basename $1)"
+    fpath="$2/$fn"
+
     if [ -e "$fpath" -a ! -h "$fpath" ]; then
         now=`date +%F.%H.%M`
         mv "$fpath" "$fpath.$now" && echo "moved old $fpath to $fpath.$now"
