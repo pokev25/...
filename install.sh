@@ -21,6 +21,8 @@ mkdir -p ~/.vim/backup
 install_file "vim/pathogen/autoload" "$HOME/.vim"
 install_file "vim/bundle" "$HOME/.vim"
 
+install_file "sh" "$HOME" ".sh"
+
 for dotfile in `git ls-files | grep "^\." | grep -v ".gitmodules"`
 do
     install_file "$dotfile" "$HOME"

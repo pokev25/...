@@ -1,3 +1,7 @@
+[submodule "sh/oh-my-zsh"]
+	path = sh/oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
+	ignore = dirty
 [submodule "vim/pathogen"]
 	path = vim/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
