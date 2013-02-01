@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PREFIX="$HOME/usr"
+. $HOME/.sh/export.sh
 
 install_file() {
     fn="$3"

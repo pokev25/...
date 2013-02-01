@@ -12,17 +12,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias vi='vim'
-alias ll='ls -l --group-directories-first'
-alias lh='ls -l -h --group-directories-first'
-alias la='ls -A'
-alias l='ls -CF --group-directories-first'
-alias ..='cd ..'
-alias path='echo -e ${PATH//:/\\n}'
-alias tree='tree -Csu'
-
-export PREFIX="$HOME/usr"
-export PATH=$PATH:$PREFIX/bin
+. $HOME/.sh/alias.sh
+. $HOME/.sh/export.sh
 
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
