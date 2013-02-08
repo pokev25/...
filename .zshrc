@@ -2,7 +2,7 @@
 
 ZSH=$HOME/.sh/oh-my-zsh
 ZSH_THEME="pygmalion"
-plugins=(git)
+plugins=(git git-flow)
 . $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
