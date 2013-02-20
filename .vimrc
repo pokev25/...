@@ -9,6 +9,8 @@ set t_Co=16
 set background=light
 colorscheme solarized
 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 " line number
 set number
 " cursor position
