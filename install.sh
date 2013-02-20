@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. $HOME/.sh/export.sh
+. sh/export.sh
 
 install_file() {
     fn="$3"
