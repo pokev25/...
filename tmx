@@ -9,7 +9,7 @@ base_session="0"
 list_sessions=`tmux list-sessions 2>/dev/null | awk -F: '{print $1}'`
 
 if [[ -z "$list_sessions" ]]; then
-    tmux new-session -d -s $base_session
+    tmux new-session -d -s $base_session -n "$"
 fi
 
 new_session=$base_session.`date +%Y.%m.%d.%H.%M.%S`
