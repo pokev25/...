@@ -36,6 +36,7 @@ nmap <S-Tab> <<
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
+nnoremap <silent> <F7> :!make<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " highlight all matches of search pattern
