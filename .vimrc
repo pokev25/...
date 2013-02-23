@@ -50,8 +50,8 @@ set backspace=indent,eol,start
 " gui specific
 set guioptions-=T
 
-set backupdir=~/.vim/backup,/tmp
-set directory=~/.vim/backup,/tmp
+set backupdir=~/.vim/backup//,/tmp//
+set directory=~/.vim/backup//,/tmp//
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
