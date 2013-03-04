@@ -13,3 +13,7 @@ add Control = Control_L
 keycode 108 = Hangul
 remove Mod1 = Alt_R
 remove Mod1 = Hangul
+
+keycode 105 = Hangul_Hanja
+remove Mod1 = Control_R
+remove Mod1 = Hangul_Hanja
