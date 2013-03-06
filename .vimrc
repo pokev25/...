@@ -9,7 +9,9 @@ set t_Co=16
 set background=light
 colorscheme solarized
 
+" plugins
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:gitgutter_enabled = 0
 
 " line number
 set number
