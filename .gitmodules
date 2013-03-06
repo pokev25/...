@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-smartinput"]
 	path = vim/bundle/vim-smartinput
 	url = git://github.com/kana/vim-smartinput.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
