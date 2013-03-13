@@ -22,7 +22,7 @@ set showcmd
 " show status bar: 2=always
 set laststatus=2
 
-set colorcolumn=80
+set colorcolumn=80,100
 
 " tab
 set tabstop=4
