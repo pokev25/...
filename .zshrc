@@ -8,6 +8,9 @@ unsetopt correct_all
 DISABLE_AUTO_TITLE=true
 CASE_SENSITIVE=true
 
+unalias ...
+unset -f cd
+
 . $HOME/.sh/alias.sh
 . $HOME/.sh/agnoster.zsh-theme
 
