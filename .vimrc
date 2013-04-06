@@ -24,6 +24,9 @@ set laststatus=2
 
 set colorcolumn=80,100
 
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 " tab
 set tabstop=4
 set shiftwidth=4
