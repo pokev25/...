@@ -7,6 +7,7 @@ filetype plugin on
 set t_Co=16
 
 set background=light
+let g:solarized_termtrans=1
 colorscheme solarized
 
 " plugins
