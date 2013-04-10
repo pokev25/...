@@ -31,3 +31,6 @@
 [submodule "vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/rust.vim"]
+	path = vim/bundle/rust.vim
+	url = git://github.com/wting/rust.vim.git
