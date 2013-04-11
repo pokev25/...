@@ -1,8 +1,9 @@
 set nocompatible
 
+filetype off
 call pathogen#infect()
 syntax on
-filetype plugin on
+filetype plugin indent on
 
 set t_Co=16
 
