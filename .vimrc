@@ -29,6 +29,13 @@ set colorcolumn=80,100
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+" vim-indent-guides
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=lightgrey
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=lightgrey
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+
 " tab
 set tabstop=4
 set shiftwidth=4
