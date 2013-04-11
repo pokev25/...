@@ -2,6 +2,10 @@
 
 cd `dirname $0`
 
+git submodule init
+git submodule sync
+git submodule update
+
 . sh/export.sh
 
 install_file() {
