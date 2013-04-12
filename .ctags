@@ -1,5 +1,5 @@
 --langdef=rust
---langmap=rust:.rs
+--langmap=rust:.rs.rc
 --regex-rust=/[ \t]*fn[ \t]+([a-zA-Z0-9_]+)/\1/f,function/
 --regex-rust=/[ \t]*type[ \t]+([a-zA-Z0-9_]+)/\1/T,types/
 --regex-rust=/[ \t]*enum[ \t]+([a-zA-Z0-9_]+)/\1/T,types/
