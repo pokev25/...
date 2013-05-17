@@ -13,6 +13,7 @@ unset -f cd
 
 . $HOME/.sh/alias.sh
 . $HOME/.sh/agnoster.zsh-theme
+. $HOME/.sh/android-sdk.zsh
 
 if [[ -f ~/.zshrc.local ]]; then
     . ~/.zshrc.local
