@@ -28,6 +28,8 @@ set colorcolumn=80,100
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+highlight TabCharacter ctermbg=lightgrey guibg=lightgrey
+match TabCharacter /\t/
 
 " vim-indent-guides
 let g:indent_guides_auto_colors = 0
