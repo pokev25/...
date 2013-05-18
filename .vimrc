@@ -1,4 +1,5 @@
 set nocompatible
+set encoding=utf-8
 
 filetype off
 call pathogen#infect()
@@ -26,10 +27,8 @@ set laststatus=2
 
 set colorcolumn=80,100
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-highlight TabCharacter ctermbg=lightgrey guibg=lightgrey
-match TabCharacter /\t/
+set listchars=tab:→\ ,trail:·
+set list
 
 " vim-indent-guides
 let g:indent_guides_auto_colors = 0
