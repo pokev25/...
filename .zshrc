@@ -1,7 +1,6 @@
 . $HOME/.sh/export.sh
 
 ZSH=$HOME/.sh/oh-my-zsh
-plugins=(git git-flow)
 . $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
@@ -13,7 +12,8 @@ unset -f cd
 
 . $HOME/.sh/alias.sh
 . $HOME/.sh/agnoster.zsh-theme
-. $HOME/.sh/android-sdk.zsh
+
+fpath=($fpath $HOME/.sh/zsh-completions/src)
 
 if [[ -f ~/.zshrc.local ]]; then
     . ~/.zshrc.local
