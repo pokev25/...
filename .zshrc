@@ -15,6 +15,8 @@ unset -f cd
 
 fpath=($fpath $HOME/.sh/zsh-completions/src)
 
+. $HOME/.sh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 if [[ -f ~/.zshrc.local ]]; then
     . ~/.zshrc.local
 fi
