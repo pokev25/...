@@ -15,6 +15,8 @@ colorscheme solarized
 " plugins
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:gitgutter_enabled = 0
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 " line number
 set number
