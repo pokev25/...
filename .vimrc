@@ -46,9 +46,6 @@ set expandtab " soft tab
 set autoindent
 
 " indentation keys
-" on normal mode
-nmap <Tab> >>
-nmap <S-Tab> <<
 " on visual mode
 vmap <Tab> >gv
 vmap <S-Tab> <gv
