@@ -50,7 +50,7 @@ set autoindent
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-nnoremap <silent> <F7> :!make<CR>
+nnoremap <silent> <F7> :TagbarToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " highlight all matches of search pattern
