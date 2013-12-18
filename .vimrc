@@ -29,7 +29,7 @@ set laststatus=2
 
 set colorcolumn=80,100
 
-set listchars=tab:↹\ ,trail:·
+set listchars=tab:↹\ ,trail:·,nbsp:¬
 set list
 
 " vim-indent-guides
