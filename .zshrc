@@ -10,6 +10,8 @@ CASE_SENSITIVE=true
 unalias ...
 unset -f cd
 
+setopt NO_BEEP
+
 . $HOME/.sh/alias.sh
 . $HOME/.sh/agnoster.zsh-theme
 
