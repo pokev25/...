@@ -45,6 +45,9 @@ set shiftwidth=4
 set expandtab " soft tab
 set autoindent
 
+" window
+set splitright
+
 " indentation keys
 " on visual mode
 vmap <Tab> >gv
