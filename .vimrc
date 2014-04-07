@@ -39,6 +39,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=lightgrey
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
+
 " tab
 set tabstop=4
 set shiftwidth=4
