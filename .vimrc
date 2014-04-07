@@ -32,16 +32,6 @@ set colorcolumn=80,100
 set listchars=tab:↹\ ,trail:·,nbsp:·
 set list
 
-" vim-indent-guides
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=lightgrey
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=lightgrey
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
-
-" vim-markdown
-let g:vim_markdown_folding_disabled=1
-
 " tab
 set tabstop=4
 set shiftwidth=4
@@ -72,6 +62,21 @@ set guioptions-=T
 
 set backupdir=~/.vim/backup//,/tmp//
 set directory=~/.vim/backup//,/tmp//
+
+" plugins
+
+" vim-indent-guides
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=lightgrey
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=lightgrey
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+
+" vim-markdown
+let g:vim_markdown_folding_disabled=1
+
+" llvm.vim
+au BufRead,BufNewFile *.ll set filetype=llvm
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
