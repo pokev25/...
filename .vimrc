@@ -18,6 +18,7 @@ let g:gitgutter_enabled = 1
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 let g:EasyMotion_leader_key = '<Leader>'
 let g:syntastic_rust_rustc_args = "--parse-only"
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 " line number
 set number
