@@ -82,3 +82,6 @@
 [submodule "vim/bundle/vim-golang"]
 	path = vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "vim/bundle/rainbow"]
+	path = vim/bundle/rainbow
+	url = https://github.com/oblitum/rainbow.git

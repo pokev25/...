@@ -72,6 +72,11 @@ let g:vim_markdown_folding_disabled=1
 " llvm.vim
 au BufRead,BufNewFile *.ll set filetype=llvm
 
+" rainbow
+let g:rainbow_active = 1
+let g:rainbow_ctermfgs = [
+    \ 'darkmagenta', 'darkgreen', 'darkcyan', 'darkred', 'red'
+\ ]
 " hardmode
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
