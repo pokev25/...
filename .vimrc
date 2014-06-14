@@ -74,7 +74,6 @@ au BufRead,BufNewFile *.ll set filetype=llvm
 
 " hardmode
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:gitgutter_enabled = 1
