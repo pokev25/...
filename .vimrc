@@ -12,14 +12,6 @@ set background=light
 let g:solarized_termtrans=1
 colorscheme solarized
 
-" plugins
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-let g:gitgutter_enabled = 1
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-let g:EasyMotion_leader_key = '<Leader>'
-let g:syntastic_rust_rustc_args = "--parse-only"
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
 " line number
 set number
 " cursor position
@@ -79,6 +71,15 @@ let g:vim_markdown_folding_disabled=1
 
 " llvm.vim
 au BufRead,BufNewFile *.ll set filetype=llvm
+
+" hardmode
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:gitgutter_enabled = 1
+let g:EasyMotion_leader_key = '<Leader>'
+let g:syntastic_rust_rustc_args = "--parse-only"
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
