@@ -75,7 +75,7 @@ au BufRead,BufNewFile *.ll set filetype=llvm
 " rainbow
 let g:rainbow_active = 1
 let g:rainbow_ctermfgs = [
-    \ 'darkmagenta', 'darkgreen', 'darkcyan', 'darkred', 'red'
+    \ 'brown', 'darkblue', 'darkmagenta', 'darkcyan', 'darkred'
 \ ]
 " hardmode
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
