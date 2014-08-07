@@ -16,6 +16,7 @@ setopt NO_BEEP
 . $HOME/.sh/agnoster.zsh-theme
 
 fpath=($fpath $HOME/.sh/zsh-completions/src)
+fpath=($fpath $HOME/.sh/completions)
 
 . $HOME/.sh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
