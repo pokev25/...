@@ -35,10 +35,9 @@ set autoindent
 " window
 set splitright
 
-" indentation keys
-" on visual mode
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+" ('_`)
+nnoremap ' `
+nnoremap ` '
 
 nnoremap <silent> <F7> :TagbarToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
@@ -86,7 +85,7 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:syntastic_rust_rustc_args = "--parse-only"
 
 " vim-dispatch shortcuts
-command Cargo Dispatch cargo build
+command! Cargo Dispatch cargo build
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
