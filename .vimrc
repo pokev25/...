@@ -26,6 +26,9 @@ set colorcolumn=80,100
 set listchars=tab:↹\ ,trail:·,nbsp:·
 set list
 
+" better command line completion
+set wildmenu
+
 " tab
 set tabstop=4
 set shiftwidth=4
@@ -42,6 +45,8 @@ nnoremap ` '
 nnoremap <silent> <F7> :TagbarToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+set nrformats-=octal
+
 " highlight all matches of search pattern
 set hlsearch
 " search on typing
@@ -55,6 +60,8 @@ set guioptions-=T
 
 set backupdir=~/.vim/backup//,/tmp//
 set directory=~/.vim/backup//,/tmp//
+
+set autoread
 
 " plugins
 
