@@ -91,3 +91,6 @@
 [submodule "vim/bundle/matchit.zip"]
 	path = vim/bundle/matchit.zip
 	url = https://github.com/vim-scripts/matchit.zip
+[submodule "sh/zsh-history-substring-search"]
+	path = sh/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git

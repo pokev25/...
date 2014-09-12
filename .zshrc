@@ -20,6 +20,11 @@ fpath=($fpath $HOME/.sh/completions)
 
 . $HOME/.sh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+. $HOME/.sh/zsh-history-substring-search/zsh-history-substring-search.zsh
+zmodload zsh/terminfo
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+
 if [[ -f ~/.zshrc.local ]]; then
     . ~/.zshrc.local
 fi
