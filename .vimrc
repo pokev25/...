@@ -88,8 +88,6 @@ let g:rainbow_ctermfgs = [
     \ 'brown', 'darkblue', 'darkmagenta', 'darkcyan', 'darkred'
 \ ]
 
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:gitgutter_enabled = 1
 let g:EasyMotion_leader_key = '<Leader>'
@@ -97,6 +95,7 @@ let g:syntastic_rust_rustc_args = "--parse-only"
 
 " vim-dispatch shortcuts
 command! Cargo Dispatch cargo build
+command! Ctags Dispatch ctags -R
 
 if filereadable(expand("~/.vimrc.local"))
     source ~/.vimrc.local
