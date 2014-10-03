@@ -38,6 +38,8 @@ set autoindent
 " window
 set splitright
 
+set scrolloff=5
+
 " ('_`)
 nnoremap ' `
 nnoremap ` '
