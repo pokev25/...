@@ -94,3 +94,6 @@
 [submodule "sh/zsh-history-substring-search"]
 	path = sh/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
+[submodule "vim/bundle/idris-vim"]
+	path = vim/bundle/idris-vim
+	url = https://github.com/idris-hackers/idris-vim
