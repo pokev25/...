@@ -34,6 +34,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab " soft tab
 set autoindent
+set nomodeline
 
 " window
 set splitright
