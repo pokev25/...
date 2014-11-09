@@ -5,6 +5,7 @@ ZSH=$HOME/.sh/oh-my-zsh
 unsetopt correct_all
 
 DISABLE_AUTO_TITLE=true
+DISABLE_AUTO_UPDATE=true
 CASE_SENSITIVE=true
 
 unalias ...
