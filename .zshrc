@@ -1,12 +1,11 @@
 . $HOME/.sh/export.sh
 
-ZSH=$HOME/.sh/oh-my-zsh
-. $ZSH/oh-my-zsh.sh
-unsetopt correct_all
-
 DISABLE_AUTO_TITLE=true
 DISABLE_AUTO_UPDATE=true
 CASE_SENSITIVE=true
+ZSH=$HOME/.sh/oh-my-zsh
+. $ZSH/oh-my-zsh.sh
+unsetopt correct_all
 
 unalias ...
 unset -f cd
