@@ -48,6 +48,9 @@ nnoremap ` '
 nnoremap <silent> <F7> :TagbarToggle<CR>
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+" ex
+nnoremap Q <nop>
+
 set nrformats-=octal
 
 " highlight all matches of search pattern
