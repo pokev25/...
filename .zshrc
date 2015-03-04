@@ -7,8 +7,7 @@ ZSH=$HOME/.sh/oh-my-zsh
 . $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
-unalias ...
-unset -f cd
+unalias '...'
 
 setopt NO_BEEP
 
